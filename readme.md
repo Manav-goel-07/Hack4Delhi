@@ -1,104 +1,147 @@
-# React
+# 🗳️ ONE-VOTE
 
-A modern React-based project utilizing the latest frontend technologies and tools for building responsive web applications.
+### *Clarity, not chaos. Democracy, not noise.*
 
-## 🚀 Features
+> **Hack4Delhi 2026 Submission**
+> A civic-tech platform designed to educate, engage, and empower citizens around the concept of **One Nation One Election (ONOE)** while actively countering misinformation — without political bias.
 
-- **React 18** - React version with improved rendering and concurrent features
-- **Vite** - Lightning-fast build tool and development server
-- **Redux Toolkit** - State management with simplified Redux setup
-- **TailwindCSS** - Utility-first CSS framework with extensive customization
-- **React Router v6** - Declarative routing for React applications
-- **Data Visualization** - Integrated D3.js and Recharts for powerful data visualization
-- **Form Management** - React Hook Form for efficient form handling
-- **Animation** - Framer Motion for smooth UI animations
-- **Testing** - Jest and React Testing Library setup
+---
 
-## 📋 Prerequisites
+## 🌍 Problem Statement
 
-- Node.js (v14.x or higher)
-- npm or yarn
+Modern democracies face two parallel crises:
 
-## 🛠️ Installation
+1. **Information Overload** – Citizens are exposed to fragmented, sensational, and often misleading political content.
+2. **Low Civic Understanding** – Complex constitutional ideas like *One Nation One Election* are reduced to slogans, not explanations.
 
-1. Install dependencies:
-   ```bash
-   npm install
-   # or
-   yarn install
-   ```
-   
-2. Start the development server:
-   ```bash
-   npm start
-   # or
-   yarn start
-   ```
+As a result, public opinion is often shaped by virality instead of verified knowledge.
 
-## 📁 Project Structure
+**The challenge:**
+👉 *How can we explain ONOE in a neutral, engaging, and trustworthy way while resisting misinformation?*
+
+---
+
+## 💡 Our Solution
+
+**ONE-VOTE** is an interactive, education-first web platform that breaks down One Nation One Election into:
+
+* Clear explanations
+* Visual narratives
+* Interactive learning modules
+* Fact-vs-Myth comparisons
+
+Instead of telling users *what to think*, we help them understand *how things work*.
+
+No propaganda. No persuasion. Only clarity.
+
+---
+
+## ✨ Key Features
+
+### 🧠 Simplified Civic Education
+
+* Plain-language explanations of ONOE
+* Step-by-step breakdowns of constitutional, logistical, and democratic implications
+* Designed for students, first-time voters, and the general public
+
+### 🎥 Interactive Learning Experience
+
+* Video-based explainers embedded directly into the learning flow
+* Scroll-driven sections that guide users instead of overwhelming them
+
+### 🛡️ Misinformation Awareness (Conceptual Layer)
+
+* Fact vs Myth sections highlighting common misconceptions
+* Emphasis on *source credibility* and *context*, not opinion
+* Architecture designed to support future AI-based verification modules
+
+### 🎨 Clean, Neutral UI
+
+* Minimalist design to avoid emotional bias
+* Accessible color palette and typography
+* Mobile-first and responsive
+
+---
+
+## 🧱 Tech Stack
+
+| Layer      | Technology            | Purpose                            |
+| ---------- | --------------------- | ---------------------------------- |
+| Frontend   | **React 18**          | Component-based UI for scalability |
+| Build Tool | **Vite**              | Ultra-fast development & builds    |
+| Styling    | **Tailwind CSS**      | Rapid, consistent UI design        |
+| Tooling    | PostCSS, Autoprefixer | Cross-browser compatibility        |
+
+> The stack prioritizes **speed, clarity, and maintainability** — ideal for civic platforms that must evolve with policy and public discourse.
+
+---
+
+## 🧠 System Architecture (Current)
 
 ```
-react_app/
-├── public/             # Static assets
-├── src/
-│   ├── components/     # Reusable UI components
-│   ├── pages/          # Page components
-│   ├── styles/         # Global styles and Tailwind configuration
-│   ├── App.jsx         # Main application component
-│   ├── Routes.jsx      # Application routes
-│   └── index.jsx       # Application entry point
-├── .env                # Environment variables
-├── index.html          # HTML template
-├── package.json        # Project dependencies and scripts
-├── tailwind.config.js  # Tailwind CSS configuration
-└── vite.config.js      # Vite configuration
+User
+  ↓
+React UI (Education + Interaction)
+  ↓
+Structured Civic Content Layer
 ```
 
-## 🧩 Adding Routes
+### Planned Extensions
 
-To add new routes to the application, update the `Routes.jsx` file:
+* AI-assisted misinformation flagging
+* Trusted data ingestion from public institutions
+* Regional language support
 
-```jsx
-import { useRoutes } from "react-router-dom";
-import HomePage from "pages/HomePage";
-import AboutPage from "pages/AboutPage";
+---
 
-const ProjectRoutes = () => {
-  let element = useRoutes([
-    { path: "/", element: <HomePage /> },
-    { path: "/about", element: <AboutPage /> },
-    // Add more routes as needed
-  ]);
+## 🚀 Why This Matters
 
-  return element;
-};
-```
+One Nation One Election is not just a political proposal — it is a **constitutional conversation**.
 
-## 🎨 Styling
+For democracy to function:
 
-This project uses Tailwind CSS for styling. The configuration includes:
+* Citizens must understand policies
+* Disagreement must be informed
+* Technology must reduce noise, not amplify it
 
-- Forms plugin for form styling
-- Typography plugin for text styling
-- Aspect ratio plugin for responsive elements
-- Container queries for component-specific responsive design
-- Fluid typography for responsive text
-- Animation utilities
+**ONE-VOTE** aims to be a digital public square built on facts, not frenzy.
 
-## 📱 Responsive Design
+---
 
-The app is built with responsive design using Tailwind CSS breakpoints.
-
-
-## 📦 Deployment
-
-Build the application for production:
+## 🧪 Running the Project Locally
 
 ```bash
-npm run build
+npm install
+npm run dev
 ```
 
-## 🙏 Acknowledgments
+---
 
-- Powered by React and Vite
-- Styled with Tailwind CSS
+## 🏆 Hackathon Impact
+
+* 🎯 Aligns with Hack4Delhi’s civic-tech and governance focus
+* 🧩 Scalable beyond a hackathon prototype
+* 📚 Suitable for educational institutions and public awareness campaigns
+* 🤝 Neutral by design — adaptable across governments and regions
+
+---
+
+## 📌 Disclaimer
+
+This project is strictly **educational**. It does not promote or oppose any political ideology, party, or government decision.
+
+The goal is understanding — not influence.
+
+---
+
+## 🌱 Future Vision
+
+* AI-powered misinformation detection
+* Crowdsourced fact verification (with moderation)
+* Multi-language support
+* Integration with public datasets
+
+---
+
+> *Democracy works best when citizens are informed.*
+> **ONE-VOTE exists to make that possible.**
